@@ -75,6 +75,9 @@ html{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+#menu{
+  display: none;
+}
 
 #products{
   display: flex;
@@ -145,4 +148,32 @@ html{
   width: 960px;
   display: flex;
   align-items: center;
+}
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1024px){
+  .disappear{
+    display: none;
+  }
+  #menu{
+    display: inline;
+  }
+  #nav-container{
+    display: flex;
+    justify-content: center;
+  }
+  #arrival span{
+    font-weight: normal;
+  }
+  #arrival h1{
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  .item{
+    width: 47%;
+  }
+}
+@media only screen and (max-width: 470px){
+  
 }
